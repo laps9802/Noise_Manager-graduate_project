@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.staticdefault.noiseep.LoginActivity">
+    <ImageView
+        android:contentDescription="@null"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="false"
+        android:scaleType="centerCrop"
+        android:src="@drawable/wallpaper" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <RelativeLayout
+            android:id="@+id/layoutTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:id="@+id/textTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="소음 매니저"
+                android:textSize="46dp"
+                android:textColor="#ffffff"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textTitle"
+                android:layout_centerHorizontal="true"
+                android:text="고요한 삶을 만들어드립니다."
+                android:textSize="14dp"
+                android:textColor="#2e2e2e"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layoutLogin"
+            android:layout_marginTop="60dp"
+            android:layout_below="@id/layoutTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true">
+            <TextView
+                android:id="@+id/textId"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:text="아이디"
+                android:textSize="16dp"
+                android:textColor="#ffffff"/>
+            <EditText
+                android:id="@+id/editId"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:textSize="12dp"
+                android:textColor="#ffffff"
+                android:layout_toRightOf="@id/textId"/>
+            <TextView
+                android:id="@+id/textPw"
+                android:layout_below="@id/textId"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:text="비밀번호"
+                android:textSize="16dp"
+                android:textColor="#ffffff"/>
+            <EditText
+                android:id="@+id/editPw"
+                android:layout_below="@id/editId"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:inputType="textPassword"
+                android:textSize="12dp"
+                android:textColor="#ffffff"
+                android:layout_toRightOf="@id/textPw"/>
+            <Button
+                android:id="@+id/buttonLogin"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="20dp"
+                android:text="로그인"
+                android:layout_toRightOf="@id/editId"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>
